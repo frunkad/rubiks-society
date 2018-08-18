@@ -12,6 +12,7 @@
     <script defer src="/__/firebase/5.2.0/firebase-database.js"></script>
     <script defer src="/__/firebase/5.2.0/firebase-messaging.js"></script>
     <script defer src="/__/firebase/5.2.0/firebase-storage.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
@@ -21,25 +22,36 @@
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
       #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: inline-block; text-align: center; text-decoration: none; }
+      #message a { display: inline-block; text-align: center; text-transform: uppercase; text-decoration: none; padding: 16px; border-radius: 4px; font-size: 25px; color:black;}
       #message { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
-      #social {display: inline-block;}
+      }
+      #message img { transform-origin:50% 50%; animation:2s rotateRight infinite linear;}
+      @keyframes rotateRight{
+        100%{ transform:rotate(360deg); }
       }
     </style>
   </head>
   <body>
     <div id="message">
-      <h2>Welcome to <b>Rubik's Society</b></h2>
+      <h2><img src="./images/logo.jpeg" height="30px;" width="30px;">&nbsp; &nbsp; Welcome to <b>Rubik's Society</b></h2>
+      <br />
+      <br />
       <p>We are still building up :) :)<br>Thanks for visiting</p>
-      <a href="https://github.com/rubiks-society" target="_blank"><img src="images/github.png" alt="Github" title="Github"></a>
-      <a href="https://rubiks-society.slack.com/" target="_blank"><img src="images/slack.png" alt="Slack" title="Slack"></a>
-      <a href="mailto:rubiks.society@galgotiasuniversity.edu.in" target="_blank"><img src="images/email.png" alt="Email us" title="Email"></a>
-      <img src="images/twitter.png" alt="Twitter" title="Twitter">
-      <img src="images/fb.png" alt="Facebook" title="Facebook">
+      <br />
+      <br />
+      
+      <div align="center" id="social" >
+        <p style="font-size:10px; margin: 0px;">Follow For Updates</p>
+        <a href="https://github.com/rubiks-society" target="_blank"><i class="fab fa-github" ></i></a>
+        <a href="https://rubiks-society.slack.com/" target="_blank"><i class="fab fa-slack-hash" ></i></a>
+        <a href="mailto:rubiks.society@galgotiasuniversity.edu.in" target="_blank"><i class="fa fa-envelope" ></i></a>
+      </div>
+      <!-- <img src="images/twitter.png" alt="Twitter" title="Twitter">
+      <img src="images/fb.png" alt="Facebook" title="Facebook"> -->
       
 
       
